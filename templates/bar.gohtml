@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ice Cream Parlor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Ice Cream Parlor 🍦</h1>
+        <p>Which ice cream are you craving today?</p>
+
+        {{if .First}}
+            <div class="user-info">
+                <p><strong>Username:</strong> {{.UserName}}</p>
+                <p><strong>First Name:</strong> {{.First}}</p>
+            </div>
+
+            <!-- Display the 4 ice cream images with a thin line between them -->
+            <div class="image-gallery">
+                <img src="/static/images/img1.jpg" alt="Ice Cream 1" class="ice-cream-img">
+                <div class="image-divider"></div>
+                <img src="/static/images/img2.jpg" alt="Ice Cream 2" class="ice-cream-img">
+                <div class="image-divider"></div>
+                <img src="/static/images/img3.jpg" alt="Ice Cream 3" class="ice-cream-img">
+                <div class="image-divider"></div>
+                <img src="/static/images/img4.jpg" alt="Ice Cream 4" class="ice-cream-img">
+            </div>
+
+            <a class="logout-button" href="/logout">Logout</a>
+        {{end}}
+    </div>
+</body>
+</html>

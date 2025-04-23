@@ -1,0 +1,118 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fceff9, #e0f7fa);
+    color: #5d4e60;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #fffafc;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px dashed #ffd6e7;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #7b6d8d;
+}
+
+.user-info {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    border: 1px solid #ffd6e7;
+    text-align: left;
+}
+
+.logout-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffb6c1;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #ff8fab;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  width: 100%;
+}
+/* Style for the buttons */
+.button {
+    display: inline-block;
+    margin-top: 20px; /* Add space between buttons */
+    padding: 10px 20px;
+    background-color: #ffb6c1;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Adjust margin between buttons */
+.button + .button {
+    margin-top: 45px; /* Add some space between the buttons */
+}
+
+.button:hover {
+    background-color: #ff8fab;
+}
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #fff0f5;
+}
+
+/* Styling each ice cream image */
+.ice-cream-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on images */
+.ice-cream-img:hover {
+    transform: scale(1.1);
+}
+
+/* Thin divider line between images */
+.image-divider {
+    width: 1px;
+    height: 150px;
+    margin: 0 10px;  /* Small space between images */
+}
+
